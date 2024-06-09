@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+import StudentSignIn from './components/StudentSignIn';
+import TeacherSignIn from './components/TeacherSignIn';
+import StudentSignUp from './components/StudentSingnUp';
+import TeacherSignUp from './components/TeacherSignUp';
+import StuentHome from './components/StudentHome';
+import TeacherHome from './components/TeacherHome';
+import { BrowserRouter as Router } from 'react-router-dom';
+import NavigationStack from './components/NavigationStack';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {/* <StudentSignIn /> */}
+      {/* <TeacherSignIn /> */}
+      {/* <StudentSignUp/> */}
+      {/* <TeacherSignUp/> */}
+      {/* <StuentHome/> */}
+      {/* <TeacherHome /> */}
+      <Router>
+        <NavigationStack />
+      </Router>
+
+
     </div>
   );
 }
